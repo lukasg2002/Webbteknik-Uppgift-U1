@@ -3,6 +3,10 @@ body {
     padding: 15px;
 }
 
+#logo {
+    font-weight: bold;
+}
+
 .navbar {
     display: flex;
 }
