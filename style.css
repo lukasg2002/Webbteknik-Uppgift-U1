@@ -1,10 +1,16 @@
 body {
     margin: 0px;
     padding: 15px;
+    background-color: lightblue;
 }
 
 #logo {
     font-weight: bold;
+}
+
+.bakgrundsbild {
+    background-image: url("elefant.jpg");
+    background-size: cover;
 }
 
 .navbar {
@@ -28,4 +34,9 @@ a:hover {
 .rod-text {
     color: red;
     font-weight: bold;
+}
+
+#text {
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
