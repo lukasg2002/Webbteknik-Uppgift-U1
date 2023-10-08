@@ -1,30 +1,101 @@
 body {
-    margin: 0px;
-    padding: 15px;
     background-color: lightblue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        text-align: center;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .navbar {
+      flex-direction: column;
+    }
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image{
+    transition: transform 2s;
+}
+
+.image:hover {
+    transition: transform 2s;
+    transform: scale(0.5);
+}
+
+.wrapper2 {
+    flex-direction: column;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.bakgrundsbild {
+    background-image: url("elefant.jpg");
 }
 
 #logo {
     font-weight: bold;
 }
 
-.bakgrundsbild {
-    background-image: url("elefant.jpg");
-    background-size: cover;
+.navbar {
+    display: flex;
+    font-size: 24px;
 }
 
-.navbar {
+#fraga1, #fraga2, #fraga3, #logo {
+    margin: 5px 15px 15px 0px;
+}
+
+.links {
     display: flex;
 }
 
 .navbar a {
     text-decoration: none;
     color: black;
-}
-
-#fraga1, #fraga2, #fraga3, #logo {
-    font-size: 24px;
-    margin: 5px 15px 15px 0px;
 }
 
 a:hover {
@@ -34,9 +105,4 @@ a:hover {
 .rod-text {
     color: red;
     font-weight: bold;
-}
-
-.text {
-    color: white;
-    text-shadow: 2px 2px 2px black;
 }

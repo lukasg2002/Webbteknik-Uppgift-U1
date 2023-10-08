@@ -6,37 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Fråga 1</title>
+    <title>Fråga 4</title>
 </head>
 
 <body>
     <nav class="navbar">
         <a id="logo" href="index.html">Webbteknik Uppgift U1</a>
+        <div class="links">
         <a id="fraga1" href="index.html">Fråga 1</a>
         <a id="fraga2" href="fraga2.html">Fråga 2</a>
         <a id="fraga3" href="fraga3.html">Fråga 3</a>
+        </div>
     </nav>
-    <h1>Fråga 1: Datakommunikation och webbadresser.</h1>
-    <p><strong>a. </strong>Vad avser termerna <span class="rod-text">klient</span> och <span
-            class="rod-text">server</span>?</p>
-    <p><strong>Svar: </strong>Klienten är ett program som körs i användarens dator. En server är en dedikerad dator som
-        tillhandhåller data för klienten.</p>
-    <p><strong>b. </strong>Beskriv vad var och en av protokollen <span class="rod-text">TCP</span> och <span
-            class="rod-text">IP</span> gör på sändande och mottagande sida.</p>
-    <strong>Svar: </strong>
-    <ul>
-        <li>TCP Sändare: Delar upp meddelandet som ska skickas till informationspaket, de organiseras efter nummer och
-            sedan skickas vidare till IP protokollet.</li>
-        <li>TCP Mottagare: Paketen sätts samman till de ursprungliga meddelandet.</li>
-        <li>IP Sändare: IP protokollet får paketen från TCP protokollet där de adresseras med en IP adress.</li>
-        <li>IP Mottagare: IP protokollet kollar så att paketen är adresserade till rätt nätverk och dator.</li>
-    </ul>
-    <p><strong>c. </strong>Beskriv de delar som följande url består av: <span
-            class="rod-text">http://webbteknik.abc.se:8082/kurs1/uppg/u1.html#fragor</span></p>
-    <p><strong>Svar: </strong>HTTP är ett protokoll (HyperText Transfer Protocol). HyperText innebär att det kan finnas
-        referenser i HTML filen. Efter det som kommer domännamet och adressen till servern (webbteknik.abc.se).<br>Efter
-        det så finns en port (:8080) som används som en ingång till serverprogrammet. Slutligen så kommer adressen inom
-        servern (kurs1/uppg/u1.mhtl#fragor). #fragor visar vilken html sida man befinner sig på.</p>
-    <img src="skoldpadda.png" alt="Bild på en sköldpadda">
+    <div class="container">
+        <div class="wrapper">
+            <h1>Fråga 4: Layout</h1>
+            <p>
+                <strong>a. </strong>Då man skapar en layout med <span class="rod-text">grid</span> används bl.a. CSS-egenskaperna <span
+                    class="rod-text">grid-template-columns</span>, <span class="rod-text">grid-template-rows</span> och <span class="rod-text">grid-template-areas</span>. Beskriv vad dessa används till.
+            </p>
+            <p>
+                <strong>Svar: </strong>
+                <ul>
+                    <li>
+                        grid-template-columns är en egenskap som används för att ange hur många kolumner som ska finnas och dess bredd.
+                    </li>
+                    <li>
+                        grid-template-rows är en egenskap som används för att ange hur många rader som ska finnas och dess höjd.
+                    </li>
+                    <li>
+                        grid-template-areas är en egenskap som används som en mall för sidans rutmönster.
+                    </li>
+                </ul>
+            </p>
+            <p><strong>b. </strong>Vad är en <span class="rod-text">media query</span> och vad används den till?
+            </p>
+            <p><strong>Svar: </strong>En media query är en egenskap där man anger vid vilka storlekar som förändringar på sidan ska ske.</p>
+        </div>
+        <div class="image">
+            <img src="skoldpadda.png" alt="Bild på en sköldpadda">
+        </div>
+    </div>
 </body>
+
 </html>
